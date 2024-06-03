@@ -42,7 +42,7 @@ public class ReviewProductStep {
 	@When("user fills the review given from the sheetname {string} and rowNumber {int}")
 	public void user_fills_the_review_given_from_the_sheetname_and_row_number(String SheetName, Integer rowNumber) throws InvalidFormatException, IOException {
 	  ExcelReader excelreader=new ExcelReader();
-	  List<Map<String,String>> testdata= excelreader.getData("C:\\Users\\Dell\\Automation Software\\ProjectApril\\TestProject\\Excel\\Automation.xlsx", SheetName);
+	  List<Map<String,String>> testdata= excelreader.getData("C:\\Users\\Dell\\Automation Software\\ProjectApril\\TestProject\\src\\test\\resources\\automationTestdata.xlsx", SheetName);
 	 
 	}
 
